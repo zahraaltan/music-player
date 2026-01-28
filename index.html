@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="musicPlayer">
+            <nav>
+                <div class="circle">
+                    <i class="ri-close-fill"></i>
+                </div>
+                <div class="circle">
+                    <i class="ri-indent-decrease"></i>
+                </div>
+            </nav>
+            <img src="https://i.pinimg.com/736x/16/53/ac/1653ac556d985515565a78447ba90874.jpg" class="songImg">
+            <h1>blue bird</h1>
+            <p>naruto:Ikimonogakari (Ikimono-gakari)</p>
+            <audio id="song">
+                <source src="naruto.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="control">
+                <div><i class="ri-skip-back-fill"></i></div>
+                <div onclick="playPause()"><i class="ri-play-large-fill" id="ctrlIcon"></i></div>
+                <div><i class="ri-skip-forward-fill"></i></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
